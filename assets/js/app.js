@@ -73,7 +73,7 @@ d3.csv("data.csv").then(function(newsData) {
       .attr("class", "tooltip")
       .offset([80, -10])
       .html(function(d) {
-        return (`<br>State: ${d.state}`);
+        return (`<br>State: ${d.abbr}`);
       });
 
     // Step 7: Create tooltip in the chart
